@@ -2,18 +2,18 @@
 
 int main()
 {
-
-    cout << "Please enter your first name and age\n";
-    string first_name;
-    double age; 
-    cin >> first_name;
-    cin >> age;
-
-    double monthsAge = age * 12;
-
-    cout << "Hello, " << first_name << " (age " << monthsAge << ")\n";
+    cout << "Please enter an integer value: ";
+    int n;
+    cin >> n;
+    cout << "n == " << n
+         << "\nn + 1 == " << n + 1
+         << "\nthree times n == " << 3 * n
+         << "\ntwice n == " << n + n
+         << "\nn squared == " << n * n
+         << "\nhalf of n == " << n / 2
+         << "\nsquare root of n == " << sqrt(n)
+         << "\nmodulo 2 of n == " << n % 2
+         << "\n";
 
     keep_window_open();
-
-    return 0;
 }
